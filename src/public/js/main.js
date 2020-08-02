@@ -15,6 +15,6 @@ function ejecutar(){
         'Content-Type': 'application/json'
     }
     }).then(res => res.json())
-    .catch(error => console.error('Error:', error))
-    .then(response => console.log('Success:', response));
+    .catch(error => alert('Error:', error))
+    .then(response => alert(JSON.stringify(response.mensaje)));
 }
